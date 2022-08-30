@@ -1,26 +1,23 @@
 import {DataTypes} from 'sequelize';
 import sequelize from "../database/database.js";
 
+const{INTEGER,BOOLEAN,STRING,} = DataTypes
 const rooms = sequelize.define('rooms',{
     id: {
-        type: DataTypes.INTEGER, 
+        type: INTEGER, 
         primaryKey: true,
-        autoIncrement: true
     },
     available: {
-        type: DataTypes.BOOLEAN
+        type: BOOLEAN
     },
     type: {
-        type: DataTypes.STRING
-    },
-    number: {
-        type: DataTypes.INTEGER
+        type: STRING
     },
     description: {
-        type: DataTypes.STRING
+        type: STRING
     },
     price: {
-        type: DataTypes.INTEGER
+        type: INTEGER
     }
 })
 
