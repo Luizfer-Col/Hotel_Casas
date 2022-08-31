@@ -8,20 +8,20 @@ const clients = sequelize.define('clients',{
         primaryKey: true,
         
     },
-    available: {
-        type: BOOLEAN
-    },
-    type: {
+    name: {
         type: STRING
     },
-    number: {
-        type: INTEGER
-    },
-    description: {
+    email: {
         type: STRING
     },
-    price: {
+    codeCountryPhone: {
+        type: STRING
+    },
+    phone: {
         type: INTEGER
+    },
+    password: {
+        type: STRING
     }
 })
 
