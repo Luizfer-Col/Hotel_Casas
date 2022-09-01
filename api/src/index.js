@@ -1,4 +1,3 @@
-//Comentario para prueba de seguridad 4
 import app from './app.js'
 import sequelize from './database/database.js'
 import clients from './models/clients.js'
