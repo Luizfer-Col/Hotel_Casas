@@ -1,3 +1,4 @@
+//Comentario de prueba
 import app from './app.js'
 import sequelize from './database/database.js'
 import clients from './models/clients.js'
