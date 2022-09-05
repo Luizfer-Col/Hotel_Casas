@@ -1,8 +1,9 @@
 import {DataTypes} from 'sequelize';
 import sequelize from "../database/database.js";
+import Rooms from './Rooms.js';
 
 const{INTEGER,BOOLEAN,STRING,DATE} = DataTypes
-const reservations = sequelize.define('reservations',{
+const Reservations = sequelize.define('reservations',{
     id: {
         type: INTEGER, 
         primaryKey: true,
@@ -17,7 +18,7 @@ const reservations = sequelize.define('reservations',{
     numberGuests: {
         type: INTEGER
     },
-    numerRooms: {
+    numberRooms: {
         type: INTEGER
     },
     price: {
@@ -25,4 +26,16 @@ const reservations = sequelize.define('reservations',{
     }
 })
 
-export default reservations
+//Conectando Reservations con Rooms
+Reservations.hasMany(Rooms,
+    {
+foreignKey: 'reservationId',
+sourceKey: 'id'
+})
+Rooms.belongsTo(Reservations,
+    {
+foreignKey: 'reservationId',
+targetId: 'id'
+})
+
+export default Reservations

@@ -2,7 +2,7 @@ import {DataTypes} from 'sequelize';
 import sequelize from "../database/database.js";
 
 const{INTEGER,BOOLEAN,STRING,DATE} = DataTypes
-const hosting = sequelize.define('hosting',{
+const Hosting = sequelize.define('hosting',{
     id: {
         type: INTEGER, 
         primaryKey: true,
@@ -22,4 +22,4 @@ const hosting = sequelize.define('hosting',{
     }
 })
 
-export default hosting
+export default Hosting

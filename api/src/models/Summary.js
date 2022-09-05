@@ -1,20 +1,20 @@
+import { DATE } from 'sequelize';
 import {DataTypes} from 'sequelize';
 import sequelize from "../database/database.js";
 
 const{INTEGER,BOOLEAN,STRING,} = DataTypes
-const Beds = sequelize.define('beds',{
+const Summary = sequelize.define('summary',{
     id: {
         type: INTEGER, 
         primaryKey: true,
-        autoincrement: true
+        autoincrement:true
     },
-    name: {
-        type: STRING
+    date: {
+        type: DATE
     },
-    description: {
-        type: STRING
+    price: {
+        type: INTEGER
     }
-
 })
 
-export default Beds
+export default Summary

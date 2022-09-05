@@ -2,7 +2,7 @@ import {DataTypes} from 'sequelize';
 import sequelize from "../database/database.js";
 
 const{INTEGER,BOOLEAN,STRING,} = DataTypes
-const rooms = sequelize.define('rooms',{
+const Rooms = sequelize.define('rooms',{
     id: {
         type: STRING, 
         primaryKey: true,
@@ -21,4 +21,4 @@ const rooms = sequelize.define('rooms',{
     }
 })
 
-export default rooms
+export default Rooms
