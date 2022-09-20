@@ -10,7 +10,7 @@ import Summary from './models/Summary.js'
 const port = 3000
 async function main() {
     try {
-        await sequelize.sync({ force: true });
+        await sequelize.sync({ force: false });
         app.listen(port)
         console.log('server is listening on port', port)
     } catch (error) {

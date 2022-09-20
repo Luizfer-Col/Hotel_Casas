@@ -7,6 +7,9 @@ const Rooms = sequelize.define('rooms',{
         type: STRING, 
         primaryKey: true,
     },
+    number: {
+        type: INTEGER,
+    },
     available: {
         type: BOOLEAN
     },
