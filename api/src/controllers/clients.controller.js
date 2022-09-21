@@ -8,7 +8,7 @@ export async function getClient (req, res) {
         if(clientesObtenidos.length>0){
             res.send(clientesObtenidos)
         }else{
-            res.send("No hay usuarios registrados.")
+            res.send("Aun no hay usuarios registrados.")
         }
     } catch (error) {
      res.status(500).json({
