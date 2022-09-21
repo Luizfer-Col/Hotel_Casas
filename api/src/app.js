@@ -9,9 +9,11 @@ import clientsRoutes from './routes/clients.routes.js'
 
 
 app.use(morgan("dev"));
+app.use(express.json());
+
+
 
 app.use(clientsRoutes)
 
-app.use(express.json());
 
 export default app
