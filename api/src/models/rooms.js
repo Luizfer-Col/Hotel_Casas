@@ -8,7 +8,7 @@ const Rooms = sequelize.define('rooms',{
         primaryKey: true,
     },
     number: {
-        type: INTEGER,
+        type: INTEGER
     },
     available: {
         type: BOOLEAN
@@ -16,11 +16,32 @@ const Rooms = sequelize.define('rooms',{
     type: {
         type: STRING
     },
-    description: {
-        type: STRING
+    capacity: {
+        type: INTEGER
+    },
+    toilets: {
+        type: INTEGER
     },
     price: {
         type: INTEGER
+    },
+    description: {
+        type: STRING
+    },
+    wifi: {
+        type: BOOLEAN
+    },
+    air: {
+        type: BOOLEAN
+    },
+    tub: {
+        type: BOOLEAN
+    },
+    tv: {
+        type: BOOLEAN
+    },
+    balcony: {
+        type: BOOLEAN
     }
 })
 
