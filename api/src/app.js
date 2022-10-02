@@ -6,6 +6,7 @@ const app = express();
 //Importando rutas
 import clientsRoutes from './routes/clients.routes.js'
 import roomsRoutes from './routes/rooms.routes.js'
+import hostingRoutes from './routes/hosting.routes.js'
 
 
 
@@ -16,6 +17,7 @@ app.use(express.json());
 
 app.use(clientsRoutes)
 app.use(roomsRoutes)
+app.use(hostingRoutes)
 
 
 export default app
