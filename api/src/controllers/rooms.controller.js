@@ -18,9 +18,10 @@ export async function getRooms(req, res) {
 
   export async function createRoom(req, res) {
     try {
-      const { id, number, available, type, capacity, toilets, price, description, wifi, air, tub, tv, balcony } = req.body;
+      const { id, image, number, available, type, capacity, toilets, price, description, wifi, air, tub, tv, balcony } = req.body;
       const newRoom = await Rooms.create({
         id,
+        image,
         number,
         available,
         type,

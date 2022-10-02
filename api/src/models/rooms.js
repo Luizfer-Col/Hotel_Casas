@@ -4,8 +4,11 @@ import sequelize from "../database/database.js";
 const{INTEGER,BOOLEAN,STRING,} = DataTypes
 const Rooms = sequelize.define('rooms',{
     id: {
-        type: STRING, 
+        type: STRING,
         primaryKey: true,
+    },
+    image: {
+        type: STRING
     },
     number: {
         type: INTEGER
