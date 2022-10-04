@@ -1,26 +1,29 @@
-import { GET_CLIENTS, GET_ALL_ROOMS } from "../actions/names";
+import { GET_CLIENTS, GET_ALL_ROOMS, CREATE_CLIENT } from "../actions/names";
 
 const initialState = {
-    rooms: [], 
-    clients: []
+  rooms: [],
+  clients: [],
+};
+
+function rootReducer(state = initialState, action) {
+  switch (action.type) {
+    case GET_ALL_ROOMS:
+      return {
+        ...state,
+        rooms: action.payload,
+      };
+    case GET_CLIENTS:
+      return {
+        ...state,
+        clients: action.payload,
+      };
+    case CREATE_CLIENT:
+      return {
+        ...state,
+      };
+    default:
+      return state;
+  }
 }
 
-function rootReducer(state = initialState, action){
-    switch(action.type){
-        case GET_ALL_ROOMS:
-            return{
-                ...state,
-                rooms: action.payload
-            };
-        case GET_CLIENTS:
-            return{
-                ...state,
-                clients: action.payload
-            };
-        default: 
-        return state 
-    }
-
-}
-
-export default rootReducer
+export default rootReducer;
