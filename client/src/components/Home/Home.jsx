@@ -37,7 +37,8 @@ function handleChange (e) {
 
 function handleSubmit (e) {
   e.preventDefault();
-  dispatch(createClient(input))
+  dispatch(createClient(input));
+  dispatch(getClients());
 }
   return (
     <>
@@ -117,34 +118,6 @@ function handleSubmit (e) {
         </form>
 
       </div>
-
-      {/* <form>
-  <label>
-    Nombre:
-    <input type="text" name="name" />
-  </label>
-  <label>
-    Tipo D.I:
-    <input type="text" name="typeId" />
-  </label>
-  <label>
-    D.I:
-    <input type="text" name="id" />
-  </label>
-  <label>
-    Correo electrónico:
-    <input type="text" name="mail" />
-  </label>
-  <label>
-    Código de área:
-    <input type="text" name="codePhone" />
-  </label>
-  <label>
-    Teléfono:
-    <input type="text" name="phone" />
-  </label>
-  <input type="submit" value="Submit" />
-</form> */}
     </>
   );
 };
