@@ -3,6 +3,12 @@ import Style from "./Home.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { createClient, getClients } from "../../redux/actions/index";
 
+
+// Header
+// Carrusel de tres imagenes
+// Footer de reservaciones
+
+
 const Home = () => {
   const dispatch = useDispatch();
   // useEffect(() => {

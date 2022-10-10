@@ -2,7 +2,6 @@ import { Router } from "express";
 import {
   getRooms,
   getRoom,
-  getRoomsByType,
   createRoom,
   updateRoom,
   deleteRoom,
