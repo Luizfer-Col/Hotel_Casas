@@ -48,7 +48,7 @@ function handleSubmit (e) {
 }
   return (
     <>
-      <div className={Style.title}>Hotel Casas</div>
+      <div >Hotel Casas</div>
           <button onClick={(e) => handleGetClients()}>Cargar clientes</button>
 
       <div>
