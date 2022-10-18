@@ -21,19 +21,24 @@ import Img3 from "../../../assets/img/Home/Img3.jpg";
 const Gallery = () => {
   const slides = [];
   const images = [Img1, Img2, Img3];
-  for (let i = 0; i < images.length; i ++ ) {
+  for (let i = 0; i < images.length; i++) {
     slides.push(
       <SwiperSlide key={`slide-${i}`} tag="li">
-        <div className={Style.slideContainer}>
-      
-        <img
+        <div className={Style.slideContainer} style={{ backgroundImage: `url(${images[i]})`, backgroundRepeat: 'no-repeat', backgroundSize:'cover' }}>
+
+          {/* <img
           src={images[i]}
           width={600}
           height={400}
           style={{ listStyle: "none", objectFit: "cover" }}
           alt={`Slide ${i}`}
-          />
+          /> */}
+          <div style={{ height: 659 }}>
+            <div >
+              <h3>Habitaciones cómodas y confortables</h3>
+            </div>
           </div>
+        </div>
       </SwiperSlide>
     );
   }
