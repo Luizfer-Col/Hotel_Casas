@@ -1,99 +1,104 @@
-.title{
-    color:black
-}
-.containerHeader{
-    background-color:#A69384;
-    display: flex;
-    justify-content:space-evenly;
-    height:120px;
-    align-items:flex-end;
-    /* padding-bottom:30px; */
-}
-.logo{
-    /* background-color: green; */
-    height:100%;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.containerMenu{
-    /* background-color: yellow; */
-    height: 95%;
-    justify-content: center;
-    flex: 3;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 20px;
-}
-.buttonNav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: aquamarine; */
-    margin-inline: 15px;
-    width: 180px;
-    height: 40px;
-    font-size: 18px;
-    color: blueviolet;
+.title {
+  color: black;
 }
 
-.buttonNav a{
-    text-decoration: none;
-    /* color: black; */
-
-}
-.buttonNav:active{
-    color:red
-}
-.containerAccount{
-    /* background-color: orange; */
-    height: 95%;
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 20px;
+.containerHeader {
+  background-color: #a69384;
+  display: flex;
+  justify-content: space-evenly;
+  height: 120px;
+  align-items: flex-end;
+  /* padding-bottom:30px; */
 }
 
-.buttonLogin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: aquamarine; */
-    margin-inline: 15px;
-    width: 180px;
-    height: 40px;
-    font-size: 18px;
-    /* color: blueviolet; */
+.logo {
+  /* background-color: green; */
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navBar{
-    text-align: center;
-}
-.navBar li{
-    display: inline-block;
-    width: 180px;
-    /* height: 40px; */
-    
-    /* padding: 4px; */
-    margin-inline: 15px;
-     
+.containerMenu {
+  /* background-color: yellow; */
+  height: 95%;
+  justify-content: center;
+  flex: 3;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
 }
 
-.NavBarLink{
-    background-color: white;
-    border-radius: 6px;   
-    width:fit-content;
-    /* flex:1; */
-    color:black;
-    text-decoration: none;
+.buttonNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  margin-inline: 15px;
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+  color: blueviolet;
 }
-.navBar li:hover{
-    background-color: blue;
-    
+
+.buttonNav a {
+  text-decoration: none;
+  /* color: black; */
 }
-.navBar li:active{
-    background-color: red;
-    
+
+.buttonNav:active {
+  color: red;
+}
+
+.containerAccount {
+  /* background-color: orange; */
+  height: 95%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.buttonLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  margin-inline: 15px;
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+  /* color: blueviolet; */
+}
+
+.navBar {
+  text-align: center;
+}
+
+.navBar li {
+  display: inline-block;
+  width: 180px;
+  /* height: 40px; */
+
+  /* padding: 4px; */
+  margin-inline: 15px;
+}
+
+.NavBarLink {
+  background-color: white;
+  border-radius: 6px;
+  width: fit-content;
+  /* flex:1; */
+  color: black;
+  text-decoration: none;
+}
+
+.navBar li:hover {
+  background-color: blue;
+}
+
+.navBar li:active {
+  background-color: red;
 }
