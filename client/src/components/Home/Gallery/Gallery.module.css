@@ -3,3 +3,20 @@
     height: 659;
     width: 1353;
 }
+/* .swiperNavPrev {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiperNavPrev{
+    left: 0;
+    /* background-image: ; */
+
+

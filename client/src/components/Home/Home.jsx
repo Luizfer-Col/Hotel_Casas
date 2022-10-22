@@ -24,11 +24,7 @@ const Home = () => {
  
   return (
     <>
-      <div>Hotel Casas</div>
-      <button onClick={(e) => handleGetClients()}>Cargar clientes</button>
-      <button>
-        <Link to = "/register">REGISTRO</Link>
-      </button>
+      {/* <button onClick={(e) => handleGetClients()}>Cargar clientes</button> */}
 
       <Gallery />
     </>

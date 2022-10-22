@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Style from "./Gallery.module.css";
 // Importando Swiper de React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,15 +17,22 @@ import Img1 from "../../../assets/img/Home/Img1.jpg";
 import Img2 from "../../../assets/img/Home/Img2.jpg";
 import Img3 from "../../../assets/img/Home/Img3.jpg";
 
-
 const Gallery = () => {
   const slides = [];
+  // const swiperNavPrevRef = useRef(null);
+  // const swiperNavNextRef = useRef(null);
   const images = [Img1, Img2, Img3];
   for (let i = 0; i < images.length; i++) {
     slides.push(
       <SwiperSlide key={`slide-${i}`} tag="li">
-        <div className={Style.slideContainer} style={{ backgroundImage: `url(${images[i]})`, backgroundRepeat: 'no-repeat', backgroundSize:'cover' }}>
-
+        <div
+          className={Style.slideContainer}
+          style={{
+            backgroundImage: `url(${images[i]})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
           {/* <img
           src={images[i]}
           width={600}
@@ -34,7 +41,16 @@ const Gallery = () => {
           alt={`Slide ${i}`}
           /> */}
           <div style={{ height: 659 }}>
-            <div >
+            {/* <div
+              className={`${styles.swiperNavPrev}`}
+              ref={swiperNavPrevRef}
+            ></div>
+            <div
+              className={`${styles.swiperNavNext}`}
+              ref={swiperNavNextRef}
+            ></div>
+            <div> */}
+            <div>
               <h3>Habitaciones cómodas y confortables</h3>
             </div>
           </div>
@@ -50,6 +66,10 @@ const Gallery = () => {
         tag="section"
         wrapperTag="ul"
         navigation
+        // navigation={{
+        //   prevEl: swiperNavPrevRef.current,
+        //   nextEl: swiperNavNextRef.current,
+        // }}
         pagination
         spaceBetween={0}
         slidesPerView={1}
