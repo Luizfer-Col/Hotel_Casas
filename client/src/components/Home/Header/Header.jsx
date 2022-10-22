@@ -3,20 +3,25 @@ import Style from "./Header.module.css";
 import Register from "../Register/Register";
 import { Link, NavLink } from "react-router-dom";
 import Logo from '../../../assets/img/Logo.png'
+import { useState } from "react";
 // logo hotel
 // botones de navegación
 // opciones de usuario
 
 const Header = () => {
+  const [active, setActive] = useState('')
+
+
   return (
     <div className={Style.containerHeader}>
       <div className={Style.logo}><img width='100px' src={Logo} alt="" /></div>
 
-      <NavBar />
+      <NavBar active={active} setActive={setActive} />
       <div className={Style.containerAccount}>
-      <div className={Style.buttonLogin}>
-        <Link to = "/login">Acceder</Link>
-      </div>
+        <div className={Style.buttonLogin}>
+          <Link onClick={() => setActive('')}
+            to="/login">Acceder</Link>
+        </div>
       </div>
     </div>
   );
@@ -24,20 +29,55 @@ const Header = () => {
 
 export default Header;
 
-const NavBar = () => {
+const NavBar = ({ active, setActive }) => {
+  const inicio = active === 'inicio'
+  const habitaciones = active === 'habitaciones'
+  const gastrobar = active === 'gastrobar'
+  return (
+    <div className={Style.containerMenu}>
+      <Link to="/">
+        <button
+          onClick={() => setActive('inicio')}
+          className={Style.buttonNav}
+          style={{
+            color: inicio ? 'white' : 'black',
+            backgroundColor: inicio ? '#75685E' : 'white',
+            fontWeight: inicio ? 'bolder' : 'normal',
+          }}
 
-  return(
-        <div className={Style.containerMenu}>
-        <Link to = "/"><button className={Style.buttonNav}>Inicio</button></Link>
-        <button className={Style.buttonNav}>Habitaciones</button>
-        <button className={Style.buttonNav}>Gastrobar</button>
-      </div> 
-    // <div>
-    //   <ul className={Style.navBar}>
-    //     <li><NavLink to = "/" className={Style.NavBarLink}>Inicio</NavLink></li>
-    //     <li><NavLink>Habitaciones</NavLink></li>
-    //     <li><NavLink>Gastrobar</NavLink></li>
-    //   </ul>
-    // </div>
+        >
+          Inicio
+        </button>
+      </Link>
+      <Link to="/">
+        <button
+          onClick={() => setActive('habitaciones')}
+          className={Style.buttonNav}
+          style={{
+            color: habitaciones ? 'white' : 'black',
+            backgroundColor: habitaciones ? '#75685E' : 'white',
+            fontWeight: habitaciones ? 'bolder' : 'normal',
+
+          }}
+        >
+          Habitaciones
+        </button>
+      </Link>
+      <Link to="/">
+        <button
+          onClick={() => setActive('gastrobar')}
+          className={Style.buttonNav}
+          style={{
+            color: gastrobar ? 'white' : 'black',
+            backgroundColor: gastrobar ? '#75685E' : 'white',
+            fontWeight: gastrobar ? 'bolder' : 'normal',
+
+          }}
+        >
+          Gastrobar
+        </button>
+      </Link>
+
+    </div>
   )
 }

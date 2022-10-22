@@ -75,7 +75,7 @@ const Gallery = () => {
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        autoplay={{ delay: 1000 }}
+        autoplay={{ delay: 6000 }}
       >
         {slides}
       </Swiper>
