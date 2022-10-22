@@ -44,89 +44,36 @@
 .buttonNav a {
     text-decoration: none;
     /* color: black; */
+}
 
-    .buttonNav:active {
-        color: red;
-    }
+.buttonNav:active {
+    color: red;
+}
 
-    <<<<<<< HEAD .buttonNavActive {
-        color: white;
-        font-weight: bold;
-        background-color: #75685E;
-    }
+.buttonNavActive {
+    color: white;
+    font-weight: bold;
+    background-color: #75685E;
+}
 
-    .containerAccount {
-        /* background-color: orange; */
-        height: 95%;
-        flex: 1;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
+.containerAccount {
+    /* background-color: orange; */
+    height: 95%;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+}
 
-    .buttonLogin {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-color: aquamarine; */
-        margin-inline: 15px;
-        width: 180px;
-        height: 40px;
-        font-size: 18px;
-        /* color: blueviolet; */
-    }
-
-    =======.containerAccount {
-        /* background-color: orange; */
-        height: 95%;
-        flex: 1;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    .buttonLogin {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-color: aquamarine; */
-        margin-inline: 15px;
-        width: 180px;
-        height: 40px;
-        font-size: 18px;
-        /* color: blueviolet; */
-    }
-
-    .navBar {
-        text-align: center;
-    }
-
-    .navBar li {
-        display: inline-block;
-        width: 180px;
-        /* height: 40px; */
-
-        /* padding: 4px; */
-        margin-inline: 15px;
-    }
-
-    .NavBarLink {
-        background-color: white;
-        border-radius: 6px;
-        width: fit-content;
-        /* flex:1; */
-        color: black;
-        text-decoration: none;
-    }
-
-    .navBar li:hover {
-        background-color: blue;
-    }
-
-    .navBar li:active {
-        background-color: red;
-    }
-
-    >>>>>>>87edf9f1beeda5b33325b28582ad2b25b2f51733
+.buttonLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    margin-inline: 15px;
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    /* color: blueviolet; */
+}
