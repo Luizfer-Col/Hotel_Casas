@@ -12,13 +12,21 @@ function App() {
     <Provider store={Store}>
       <Router>
         <div>
-      <Header />
-      <Routes>
-        <Route index path = "/" element = {<Home />}/>
-        <Route exact path = "/register" element = {<Register />}/>
-        <Route path = "/login" element = {<Login />}/>
-        {/* <Route exact path = "/register" element = {<Register />}/> */}
-      </Routes>
+          <Header />
+          <div
+            style={{
+              // backgroundColor: "green",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Routes>
+              <Route index path="/" element={<Home />} />
+              <Route exact path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+              {/* <Route exact path = "/register" element = {<Register />}/> */}
+            </Routes>
+          </div>
         </div>
       </Router>
     </Provider>
