@@ -1,5 +1,5 @@
 .container {
-  background-color: orange;
+  /* background-color: orange; */
   margin-top: 50px;
   width: 500px;
   display: flex;
@@ -22,6 +22,8 @@
 }
 
 .recover {
+  color: black;
+  font-weight: lighter;
   display: flex;
   justify-content: flex-end;
   margin-inline: 14px;
