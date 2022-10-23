@@ -1,14 +1,17 @@
 .container {
-  /* background-color: orange; */
+  background-color: orange;
+  margin-top: 50px;
   width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .form {
   /* background-color: yellow; */
   width: 80%;
 }
+
 .input {
   width: 90%;
   height: 30px;
@@ -17,17 +20,20 @@
   border-color: #a69384;
   margin-block: 6px;
 }
+
 .recover {
   display: flex;
   justify-content: flex-end;
   margin-inline: 14px;
   margin-top: -4px;
 }
+
 .actions {
   /* background-color: blueviolet; */
   display: flex;
   justify-content: space-evenly;
 }
+
 .buttons {
   width: 180px;
   height: 30px;

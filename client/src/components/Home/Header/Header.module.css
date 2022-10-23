@@ -3,10 +3,12 @@
 }
 
 .containerHeader {
-    background-color: #A69384;
+    background-color: red;
+    /* background-color: #A69384; */
     display: flex;
     justify-content: space-evenly;
-    height: 120px;
+    height: 80px;
+    width: 1024px;
     align-items: flex-end;
     /* padding-bottom:30px; */
 }
@@ -34,10 +36,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-inline: 15px;
-    width: 180px;
-    height: 40px;
-    font-size: 18px;
+    margin-inline: 10px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
     border-radius: 6px;
 }
 

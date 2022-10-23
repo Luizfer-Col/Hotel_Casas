@@ -1,8 +1,17 @@
-.slideContainer{
-    min-height: 500;
-    height: 659;
-    width: 1353;
+.slideContainer {
+    min-height: 500px;
+    /* height: 659px; */
+    width: '100%';
+    background-color: yellowgreen;
+    /* margin: auto; */
+    padding: 0;
+    margin-left: -40px;
 }
+
+.slideContainer ul {
+    list-style: none;
+}
+
 /* .swiperNavPrev {
     top: 50%;
     position: absolute;
@@ -18,5 +27,3 @@
 .swiperNavPrev{
     left: 0;
     /* background-image: ; */
-
-

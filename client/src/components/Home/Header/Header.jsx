@@ -13,14 +13,17 @@ const Header = () => {
 
 
   return (
-    <div className={Style.containerHeader}>
-      <div className={Style.logo}><img width='100px' src={Logo} alt="" /></div>
-
-      <NavBar active={active} setActive={setActive} />
-      <div className={Style.containerAccount}>
-        <div className={Style.buttonLogin}>
-          <Link onClick={() => setActive('')}
-            to="/login">Acceder</Link>
+    <div style={{ width: '100%', backgroundColor: '#A69384', display: "flex", justifyContent: 'center' }}>
+      <div className={Style.containerHeader}>
+        <Link to="/" onClick={() => setActive('inicio')}>
+          <div className={Style.logo}><img width='70px' src={Logo} alt="" /></div>
+        </Link>
+        <NavBar active={active} setActive={setActive} />
+        <div className={Style.containerAccount}>
+          <div className={Style.buttonLogin}>
+            <Link onClick={() => setActive('')}
+              to="/login">Acceder</Link>
+          </div>
         </div>
       </div>
     </div>
@@ -49,7 +52,7 @@ const NavBar = ({ active, setActive }) => {
           Inicio
         </button>
       </Link>
-      <Link to="/">
+      <Link to="/rooms">
         <button
           onClick={() => setActive('habitaciones')}
           className={Style.buttonNav}
@@ -63,7 +66,7 @@ const NavBar = ({ active, setActive }) => {
           Habitaciones
         </button>
       </Link>
-      <Link to="/">
+      <Link to="/bar">
         <button
           onClick={() => setActive('gastrobar')}
           className={Style.buttonNav}

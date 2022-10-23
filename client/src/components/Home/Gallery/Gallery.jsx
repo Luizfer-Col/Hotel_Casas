@@ -33,23 +33,9 @@ const Gallery = () => {
             backgroundSize: "cover",
           }}
         >
-          {/* <img
-          src={images[i]}
-          width={600}
-          height={400}
-          style={{ listStyle: "none", objectFit: "cover" }}
-          alt={`Slide ${i}`}
-          /> */}
-          <div style={{ height: 659 }}>
-            {/* <div
-              className={`${styles.swiperNavPrev}`}
-              ref={swiperNavPrevRef}
-            ></div>
-            <div
-              className={`${styles.swiperNavNext}`}
-              ref={swiperNavNextRef}
-            ></div>
-            <div> */}
+          <div
+          // style={{ height: 659 }}
+          >
             <div>
               <h3>Habitaciones cómodas y confortables</h3>
             </div>

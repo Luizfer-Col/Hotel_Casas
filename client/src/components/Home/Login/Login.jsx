@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Register from "../Register/Register";
 import Style from "./Login.module.css";
 
@@ -17,7 +18,7 @@ const Login = () => {
           // value={input.mai}
           // maxLength="10"
           placeholder="Ingresa tu correo electrónico"
-          // onChange={(e) => handleChange(e)}
+        // onChange={(e) => handleChange(e)}
         ></input>
         <br />
 
@@ -29,7 +30,7 @@ const Login = () => {
           // value={input.password}
           // maxLength="18"
           placeholder="Ingresa tu contraseña"
-          // onChange={(e) => handleChange(e)}
+        // onChange={(e) => handleChange(e)}
         ></input>
         <br />
 
@@ -68,9 +69,11 @@ const Login = () => {
           }}
         ></div>
         <p style={{ fontSize: 20 }}>¿No tienes cuenta?</p>
-        <p style={{ fontSize: 18, color: "#56070C", fontWeight: "bolder" }}>
-          Regístrate
-        </p>
+        <Link to={'/register'}>
+          <p style={{ fontSize: 18, color: "#56070C", fontWeight: "bolder" }}>
+            Regístrate
+          </p>
+        </Link>
       </div>
     </div>
   );
