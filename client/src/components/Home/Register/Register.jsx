@@ -157,7 +157,9 @@ const Register = (props) => {
           ></input>
           <br />
           <div style={{ backgroundColor: "green", display: "flex" }}>
-            <select>
+            <select
+              className={Style.buttons}
+            >
               <option value="" disabled selected hidden>
                 Tipo de documento
               </option>
@@ -246,9 +248,9 @@ const Register = (props) => {
             <button
               className={Style.buttons}
               style={{
-                marginRight: "2",
-                borderColor: "black",
-                borderWidth: "1",
+                marginRight: 2,
+                borderColor: "red",
+                borderWidth: 1,
                 fontWeight: "bolder",
               }}
             >

@@ -24,7 +24,7 @@ function App() {
               justifyContent: "center",
               // padding: 15,
               margin: 'auto',
-              width: 1200
+              width: 1024
             }}
           >
             <Routes>
@@ -33,7 +33,6 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/rooms" element={<Rooms />} />
               <Route path="/bar" element={<Bar />} />
-              {/* <Route exact path = "/register" element = {<Register />}/> */}
             </Routes>
           </div>
         </div>

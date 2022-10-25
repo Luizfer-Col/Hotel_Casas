@@ -1,11 +1,12 @@
 .container {
-  background-color: orange;
-  margin-top: 50px;
+  /* background-color: orange; */
+  /* margin-top: 50px; */
   width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .form {
   /* background-color: yellow; */
   width: 80%;

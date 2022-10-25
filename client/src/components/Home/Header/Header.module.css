@@ -15,7 +15,7 @@
 
 .logo {
   /* background-color: green; */
-  /* height: 100%; */
+  height: 100%;
   flex: 1;
   display: flex;
   align-items: center;
@@ -24,12 +24,12 @@
 
 .containerMenu {
   /* background-color: yellow; */
-  height: 95%;
+  /* height: 95%; */
   justify-content: center;
-  flex: 3;
+  /* flex: 3; */
   display: flex;
   align-items: flex-end;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .buttonNav {
@@ -60,12 +60,12 @@
 
 .containerAccount {
   /* background-color: orange; */
-  height: 95%;
+  height: 100%;
   flex: 1;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .buttonLogin {
