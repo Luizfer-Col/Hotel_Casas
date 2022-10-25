@@ -22,7 +22,7 @@
 }
 
 .actions {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: flex;
   justify-content: space-evenly;
 }

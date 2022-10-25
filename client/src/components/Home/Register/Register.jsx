@@ -5,6 +5,7 @@ import { createClient, getClients } from "../../../redux/actions/index";
 import { Link } from "react-router-dom";
 
 const Register = (props) => {
+  const dispatch = useDispatch();
   const [input, setInput] = useState({
     name: "",
     idType: "",
@@ -29,108 +30,11 @@ const Register = (props) => {
 
   function handleSubmit(e) {
     e.preventDefault();
+    console.log("enviando formulario");
     dispatch(createClient(input));
     dispatch(getClients());
   }
   return (
-    // <div>
-    //   <div>
-    //     <h2 style={{ fontSize: 50, color: "black" }}>Regístrate</h2>
-    //     <p
-    //       style={{
-    //         fontSize: 20,
-    //         marginTop: -10,
-    //         color: "black",
-    //         fontWeight: "lighter",
-    //       }}
-    //     >
-    //       Por favor llena todos los campos.
-    //     </p>
-
-    //     <form onSubmit={(e) => handleSubmit(e)} name="Formulario de registro">
-    //       <input
-    //         type="text"
-    //         name="name"
-    //         value={input.name}
-    //         maxLength="30"
-    //         placeholder="Nombre completo"
-    //         onChange={(e) => handleChange(e)}
-    //       ></input>
-    //       <br />
-
-    //       <select>
-    //         <option value="" disabled selected hidden>
-    //           Tipo de documento
-    //         </option>
-    //         {idTypes.map((t) => (
-    //           <option value={t}>{t}</option>
-    //         ))}
-    //       </select>
-
-    //       <input
-    //         type="text"
-    //         name="id"
-    //         value={input.id}
-    //         maxLength="10"
-    //         placeholder="Documento de identificación"
-    //         onChange={(e) => handleChange(e)}
-    //       ></input>
-    //       <br />
-
-    //       <input
-    //         type="text"
-    //         name="email"
-    //         value={input.email}
-    //         maxLength="30"
-    //         placeholder="Correo electrónico"
-    //         onChange={(e) => handleChange(e)}
-    //       ></input>
-    //       <br />
-
-    //       {/* <select>
-    //         <option value="" disabled selected hidden>
-    //           +
-    //         </option>
-    //         {code.map((t) => (
-    //           <option value={t}>{t}</option>
-    //         ))}
-    //       </select> */}
-
-    //       {/* <input
-    //         type="text"
-    //         name="codeCountryPhone"
-    //         value={input.codeCountryPhone}
-    //         maxLength="10"
-    //         placeholder="Código de área"
-    //         onChange={(e) => handleChange(e)}
-    //       ></input>
-    //       <br /> */}
-
-    //       <input
-    //         type="text"
-    //         name="phone"
-    //         value={input.phone}
-    //         maxLength="10"
-    //         placeholder="Teléfono"
-    //         onChange={(e) => handleChange(e)}
-    //       ></input>
-    //       <br />
-
-    //       <input
-    //         type="text"
-    //         name="password"
-    //         value={input.password}
-    //         maxLength="18"
-    //         placeholder="Contraseña"
-    //         onChange={(e) => handleChange(e)}
-    //       ></input>
-    //       <br />
-
-    //       <button type="submit">Aceptar</button>
-    //     </form>
-    //   </div>
-    // </div>
-
     <div className={Style.container}>
       <h2 style={{ fontSize: 50, color: "black" }}>Regístrate</h2>
       <p
@@ -151,34 +55,20 @@ const Register = (props) => {
             type="text"
             name="name"
             value={input.name}
-            maxLength="30"
-            placeholder="Nombre completo"
+            placeholder="Nombre"
             onChange={(e) => handleChange(e)}
           ></input>
           <br />
-          <div style={{ backgroundColor: "green", display: "flex" }}>
-            <select
-              className={Style.buttons}
-            >
-              <option value="" disabled selected hidden>
-                Tipo de documento
-              </option>
-              {idTypes.map((t) => (
-                <option value={t}>{t}</option>
-              ))}
-            </select>
 
-            <input
-              className={Style.input}
-              type="text"
-              name="id"
-              value={input.id}
-              maxLength="10"
-              placeholder="Documento de identificación"
-              onChange={(e) => handleChange(e)}
-            ></input>
-            <br />
-          </div>
+          <input
+            className={Style.input}
+            type="text"
+            name="lastname"
+            value={input.lastname}
+            placeholder="Apellidos"
+            onChange={(e) => handleChange(e)}
+          ></input>
+          <br />
 
           <input
             className={Style.input}
@@ -187,36 +77,6 @@ const Register = (props) => {
             value={input.email}
             maxLength="30"
             placeholder="Correo electrónico"
-            onChange={(e) => handleChange(e)}
-          ></input>
-          <br />
-
-          {/* <select>
-          <option value="" disabled selected hidden>
-            +
-          </option>
-          {code.map((t) => (
-            <option value={t}>{t}</option>
-          ))}
-        </select>
-
-        <input
-          type="text"
-          name="codeCountryPhone"
-          value={input.codeCountryPhone}
-          maxLength="10"
-          placeholder="Código de área"
-          onChange={(e) => handleChange(e)}
-        ></input>
-        <br /> */}
-
-          <input
-            className={Style.input}
-            type="text"
-            name="phone"
-            value={input.phone}
-            maxLength="10"
-            placeholder="Teléfono"
             onChange={(e) => handleChange(e)}
           ></input>
           <br />
@@ -243,20 +103,23 @@ const Register = (props) => {
           ></input>
           <br />
 
-          {/* <button type="submit">Aceptar</button> */}
           <div className={Style.actions}>
+            <Link to="/login">
+              <button
+                className={Style.buttons}
+                style={{
+                  marginRight: 2,
+                  borderColor: "red",
+                  borderWidth: 1,
+                  fontWeight: "bolder",
+                }}
+              >
+                Volver
+              </button>
+            </Link>
+
             <button
-              className={Style.buttons}
-              style={{
-                marginRight: 2,
-                borderColor: "red",
-                borderWidth: 1,
-                fontWeight: "bolder",
-              }}
-            >
-              Volver
-            </button>
-            <button
+              type="submit"
               className={Style.buttons}
               style={{
                 backgroundColor: "#56070C",

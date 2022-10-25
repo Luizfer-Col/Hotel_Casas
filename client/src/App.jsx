@@ -20,12 +20,12 @@ function App() {
           </div>
           <div
             style={{
-              backgroundColor: "green",
+              // backgroundColor: "green",
               display: "flex",
               justifyContent: "center",
               // padding: 15,
-              margin: 'auto',
-              width: 1024
+              margin: "auto",
+              width: 1024,
             }}
           >
             <Routes>
