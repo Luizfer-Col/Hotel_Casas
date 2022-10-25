@@ -8,6 +8,7 @@ import Register from "./components/Home/Register/Register";
 import Login from "./components/Home/Login/Login";
 import Rooms from "./components/Rooms/Rooms";
 import Bar from "./components/Bar/Bar";
+import Account from "./components/Account/Account";
 
 function App() {
   return (
@@ -19,18 +20,20 @@ function App() {
           </div>
           <div
             style={{
-              // backgroundColor: "green",
+              backgroundColor: "green",
               display: "flex",
               justifyContent: "center",
               // padding: 15,
-              margin: 'auto',
-              width: 1200
+              margin: "auto",
+              width: 1200,
+              // marginTop: 50,
             }}
           >
             <Routes>
               <Route index path="/" element={<Home />} />
               <Route exact path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/account" element={<Account />} />
               <Route path="/rooms" element={<Rooms />} />
               <Route path="/bar" element={<Bar />} />
               {/* <Route exact path = "/register" element = {<Register />}/> */}
