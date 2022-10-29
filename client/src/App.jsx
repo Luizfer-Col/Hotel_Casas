@@ -33,6 +33,7 @@ function App() {
               <Route exact path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
               <Route path="/account" element={<Account />} />
+              <Route path="/my-reservations" element={<Account />} />
               <Route path="/rooms" element={<Rooms />} />
               <Route path="/bar" element={<Bar />} />
             </Routes>

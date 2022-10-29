@@ -1,0 +1,35 @@
+.containerMenu {
+  /* background-color: yellow; */
+  /* height: 95%; */
+  justify-content: center;
+  /* flex: 3; */
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+
+.buttonNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.buttonNav a {
+  text-decoration: none;
+  /* color: black; */
+}
+
+.buttonNav:active {
+  color: red;
+}
+
+.buttonNavActive {
+  color: white;
+  font-weight: bold;
+  background-color: #75685e;
+}
