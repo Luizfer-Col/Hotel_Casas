@@ -76,7 +76,7 @@ const Register = (props) => {
             name="email"
             value={input.email}
             maxLength="30"
-            placeholder="Correo electrónico"
+            placeholder="Email"
             onChange={(e) => handleChange(e)}
           ></input>
           <br />

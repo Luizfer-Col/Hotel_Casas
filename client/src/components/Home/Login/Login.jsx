@@ -26,7 +26,7 @@ const Login = () => {
             name="email"
             // value={input.mai}
             // maxLength="10"
-            placeholder="Ingresa tu correo electrónico"
+            placeholder="Ingresa tu email"
             // onChange={(e) => handleChange(e)}
           ></input>
           <br />

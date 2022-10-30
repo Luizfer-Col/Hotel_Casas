@@ -1,16 +1,72 @@
 .container {
-  background-color: orange;
-  margin-top: 50px;
-  width: 500px;
+  /* background-color: orange; */
+  flex: 1;
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
 }
+
+.container p {
+  margin: 0px;
+  color: rgb(77, 77, 77);
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+
+.container h3 {
+  margin: 0px;
+}
+
+.containerLeft {
+  /* background-color: red; */
+  flex: 1;
+}
+
+.containerAvatar {
+  /* background-color: green; */
+  width: 140px;
+  height: 140px;
+  /* flex: 1; */
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-inline: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerRight {
+  /* background-color: blue; */
+  flex: 2;
+}
+
+.titleRight {
+  /* background-color: green; */
+  text-align: left;
+  padding-left: 110px;
+}
+
+.containerInput {
+  /* background-color: yellow; */
+  display: flex;
+}
+
+.label {
+  background-color: red;
+  width: 100px;
+  align-self: center;
+}
 .input {
-  width: 90%;
+  width: 70%;
   height: 30px;
   padding-inline: 6px;
   border-radius: 6px;
   border-color: #a69384;
   margin-block: 6px;
+  margin-left: 10px;
 }
