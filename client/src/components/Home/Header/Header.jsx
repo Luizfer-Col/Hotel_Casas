@@ -26,7 +26,7 @@ const Header = () => {
     <div
       style={{
         width: "100%",
-        backgroundColor: "#A69384",
+        // backgroundColor: "#A69384",
         display: "flex",
         justifyContent: "center",
       }}

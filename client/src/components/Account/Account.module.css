@@ -14,19 +14,23 @@
   font-size: 0.8em;
 }
 
-.container h3 {
+.container h2  {
+  margin: 0px;
+}
+.container h3  {
   margin: 0px;
 }
 
 .containerLeft {
   /* background-color: red; */
   flex: 1;
+  height: 100%
 }
 
 .containerAvatar {
   /* background-color: green; */
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   /* flex: 1; */
   border: solid;
   border-width: 1px;
@@ -41,32 +45,64 @@
 }
 
 .containerRight {
-  /* background-color: blue; */
+  /* background-color: yellowgreen; */
   flex: 2;
 }
 
 .titleRight {
   /* background-color: green; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: left;
   padding-left: 110px;
 }
 
 .containerInput {
   /* background-color: yellow; */
+  margin-top: 10px;
   display: flex;
+  align-items: center
 }
 
 .label {
-  background-color: red;
+  /* background-color: red; */
   width: 100px;
+  text-align: right;
   align-self: center;
 }
+
 .input {
-  width: 70%;
-  height: 30px;
+  /* width: 70%; */
+  width: 60%;
+  height: 35px;
   padding-inline: 6px;
   border-radius: 6px;
+  border-width: .5px;
   border-color: #a69384;
   margin-block: 6px;
   margin-left: 10px;
+}
+
+.inputPhone{
+    /* width: 70%; */
+    width: 40%;
+    height: 35px;
+    padding-inline: 6px;
+    border-radius: 6px;
+    border-width: .5px;
+    border-color: #a69384;
+    margin-block: 6px;
+    margin-left: 10px;
+}
+
+.container select{
+  width: 18%;
+  margin: 0;
+    height: 35px;
+    padding-inline: 6px;
+    border-radius: 6px;
+    border-width: .5px;
+    border-color: #a69384;
+    margin-block: 6px;
+    margin-left: 10px;
 }

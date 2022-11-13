@@ -36,13 +36,13 @@ const Account = (props) => {
     <div className={Style.container}>
       <div
         className={Style.containerLeft}
-        // style={{ backgroundColor: "red", flex: 1 }}
+      // style={{ backgroundColor: "red", flex: 1 }}
       >
         <div
           // style={{}}
           className={Style.containerAvatar}
         >
-          <img width="100px" src={Avatar} alt="" />
+          <img width="120px" src={Avatar} alt="" />
         </div>
         <h3>Luis Colorado</h3>
         <p>Administrador</p>
@@ -55,11 +55,14 @@ const Account = (props) => {
           </Link>
         </div>
       </div>
+
+
+
       <div className={Style.containerRight}>
-        <h3 className={Style.titleRight}>Información de la cuenta</h3>
+        <h2 className={Style.titleRight}>Información de la cuenta</h2>
 
         <div className={Style.containerInput}>
-          <p className={Style.label}>Nombre</p>
+          <p className={Style.label}>Nombre(s):</p>
           <input
             className={Style.input}
             type="text"
@@ -72,7 +75,7 @@ const Account = (props) => {
         </div>
 
         <div className={Style.containerInput}>
-          <p className={Style.label}>Apellidos</p>
+          <p className={Style.label}>Apellido(s):</p>
           <input
             className={Style.input}
             type="text"
@@ -85,7 +88,7 @@ const Account = (props) => {
         </div>
 
         <div className={Style.containerInput}>
-          <p className={Style.label}>Email</p>
+          <p className={Style.label}>Email:</p>
           <input
             className={Style.input}
             type="text"
@@ -98,9 +101,75 @@ const Account = (props) => {
           <br />
         </div>
 
-        <h3 className={Style.titleRight}>Información adicional</h3>
 
-        <input
+
+        <div className={Style.containerInput} style={{ marginBottom: 25 }}>
+          <p className={Style.label} style={{ color: 'white' }}></p>
+          <div
+            style={{
+              backgroundColor: "black",
+              width: "60%",
+              height: 2,
+              // 
+              paddingInline: 6,
+              // marginLeft: "10%",
+              marginTop: 30,
+              marginLeft: 10
+
+            }}
+          ></div>
+          <br />
+        </div>
+
+
+
+        <h2 className={Style.titleRight}>Información adicional</h2>
+
+        <div className={Style.containerInput}>
+          <p className={Style.label}>Teléfono:</p>
+          <select></select>
+          <input
+            className={Style.inputPhone}
+            type="text"
+            name="email"
+            value={input.email}
+            maxLength="30"
+            // placeholder="Email"
+            onChange={(e) => handleChange(e)}
+          ></input>
+          <br />
+        </div>
+
+        <div className={Style.containerInput}>
+          <p className={Style.label}>Documento:</p>
+          <select></select>
+          <input
+            className={Style.inputPhone}
+            type="text"
+            name="email"
+            value={input.email}
+            maxLength="30"
+            // placeholder="Email"
+            onChange={(e) => handleChange(e)}
+          ></input>
+          <br />
+        </div>
+
+        <div className={Style.containerInput}>
+          <p className={Style.label}>Nacionalidad:</p>
+          <input
+            className={Style.input}
+            type="text"
+            name="email"
+            value={input.email}
+            maxLength="30"
+            // placeholder="Email"
+            onChange={(e) => handleChange(e)}
+          ></input>
+          <br />
+        </div>
+
+        {/* <input
           className={Style.input}
           type="text"
           name="password"
@@ -120,7 +189,7 @@ const Account = (props) => {
           placeholder="Confirmar contraseña"
           onChange={(e) => handleChange(e)}
         ></input>
-        <br />
+        <br /> */}
       </div>
       {/* <div style={{ backgroundColor: "red" }}>
         <p>Información de la cuenta</p>

@@ -4,10 +4,10 @@
 
 .containerHeader {
   /* background-color: red; */
-  /* background-color: #A69384; */
+  background-color: #A69384;
   display: flex;
   justify-content: space-evenly;
-  height: 80px;
+  /* height: 80px; */
   width: 1024px;
   align-items: flex-end;
   /* padding-bottom: 30px; */

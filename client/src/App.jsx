@@ -14,20 +14,13 @@ function App() {
   return (
     <Provider store={Store}>
       <Router>
-        <div>
-          <div style={{ flex: 1 }}>
+        <>
+          <div 
+          // style={{ flex: 1 }}
+          >
             <Header />
           </div>
-          <div
-            style={{
-              // backgroundColor: "green",
-              display: "flex",
-              justifyContent: "center",
-              // padding: 15,
-              margin: "auto",
-              width: 1024,
-            }}
-          >
+          <div className="main-container">
             <Routes>
               <Route index path="/" element={<Home />} />
               <Route exact path="/register" element={<Register />} />
@@ -38,7 +31,7 @@ function App() {
               <Route path="/bar" element={<Bar />} />
             </Routes>
           </div>
-        </div>
+        </>
       </Router>
     </Provider>
   );
