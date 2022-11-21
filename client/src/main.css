@@ -15,6 +15,14 @@
   -webkit-text-size-adjust: 100%;
 } */
 
+
+@font-face {
+    font-family: "Acumin";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Acumin"), url("./assets/fonts/AcuminVariableConcept.woff") format("woff"), url(".assets/fonts/AcuminVariableConcept.ttf") format("truetype");
+}
+
 a {
   font-weight: 500;
   color: white;
@@ -47,24 +55,29 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  /* border-color: #646cff; */
+  font-weight: bolder;
+
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+  color: #535bf2;
+  font-weight: bolder;
+
 }
 
 @media (prefers-color-scheme: light) {

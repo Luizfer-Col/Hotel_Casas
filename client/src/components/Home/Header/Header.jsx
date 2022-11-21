@@ -26,23 +26,30 @@ const Header = () => {
     <div
       style={{
         width: "100%",
-        // backgroundColor: "#A69384",
+        height: 110,
+        backgroundColor: "#665A52",
         display: "flex",
         justifyContent: "center",
       }}
     >
       <div className={Style.containerHeader}>
-        {/* logo */}
+
+      <NavBar active={active} setActive={setActive} login={handleLogin} />
+      <div className={Style.logo}>
+        {/* <Link to="/" onClick={() => setActive("inicio")}>
+          <img width="110px" src={Logo} alt="" />
+        </Link> */}
+      </div>
+      </div>
+      {/* <div className={Style.containerHeader}>
         <div className={Style.logo}>
           <Link to="/" onClick={() => setActive("inicio")}>
             <img width="70px" src={Logo} alt="" />
           </Link>
         </div>
-        {/* NavBar */}
         <NavBar active={active} setActive={setActive} login={handleLogin} />
-        {/* Nav Account*/}
         <NavAccount setActive={setActive} logued={logued} logout={setLogued} />
-      </div>
+      </div> */}
     </div>
   );
 };

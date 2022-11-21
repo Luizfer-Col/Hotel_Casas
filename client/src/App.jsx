@@ -7,7 +7,7 @@ import Header from "./components/Home/Header/Header";
 import Register from "./components/Home/Register/Register";
 import Login from "./components/Home/Login/Login";
 import Rooms from "./components/Rooms/Rooms";
-import Bar from "./components/Bar/Bar";
+import Reserve from "./components/Reserve/Reserve";
 import Account from "./components/Account/Account";
 
 function App() {
@@ -15,12 +15,10 @@ function App() {
     <Provider store={Store}>
       <Router>
         <>
-          <div 
-          // style={{ flex: 1 }}
-          >
-            <Header />
-          </div>
+          {/* <div>
+          </div> */}
           <div className="main-container">
+            <Header />
             <Routes>
               <Route index path="/" element={<Home />} />
               <Route exact path="/register" element={<Register />} />
@@ -28,7 +26,7 @@ function App() {
               <Route path="/account" element={<Account />} />
               <Route path="/my-reservations" element={<Account />} />
               <Route path="/rooms" element={<Rooms />} />
-              <Route path="/bar" element={<Bar />} />
+              <Route path="/reserve" element={<Reserve />} />
             </Routes>
           </div>
         </>

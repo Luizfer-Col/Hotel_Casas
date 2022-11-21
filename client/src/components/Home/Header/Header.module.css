@@ -4,20 +4,22 @@
 
 .containerHeader {
   /* background-color: red; */
-  background-color: #A69384;
+  /* background-color: #A69384; */
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* height: 80px; */
-  width: 1024px;
-  align-items: flex-end;
+  /* width: 1024px; */
+  align-items: center;
+  flex:1;
   /* padding-bottom: 30px; */
 }
 
 .logo {
-  /* background-color: green; */
-  height: 100%;
-  flex: 1;
+  /* background-color: green;
+  height: 100%; */
+  margin: auto;
+  /* flex: 1; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }

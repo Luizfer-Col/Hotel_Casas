@@ -1,35 +1,53 @@
 .containerMenu {
-  /* background-color: yellow; */
+  /* background-color: blue; */
   /* height: 95%; */
-  justify-content: center;
-  /* flex: 3; */
+  justify-content: space-evenly;
+  flex: 1;
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 15px;
-}
-
-.buttonNav {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin-inline: 10px;
-  width: 120px;
-  height: 30px;
-  font-size: 15px;
-  border-radius: 6px;
 }
 
-.buttonNav a {
-  text-decoration: none;
-  /* color: black; */
+.linkActive{
+  font-family: Acumin;
+  font-weight: bolder;
+  /* color: green; */
+  text-decoration: inherit;
+  font-size: 13px;
+}
+.linkInactive{
+  font-family: Acumin;
+  font-weight: lighter;
+  /* color: red; */
+  text-decoration: inherit;
+  font-size: 13px;
 }
 
-.buttonNav:active {
-  color: red;
-}
-
-.buttonNavActive {
+.linkActive:hover {
+  font-weight: bolder;
   color: white;
-  font-weight: bold;
-  background-color: #75685e;
+  /* font-weight: bolder; */
+
 }
+.linkInactive:hover {
+  font-weight: bolder;
+  color: white;
+  /* font-weight: bolder; */
+
+}
+
+.groupButtons{
+  flex: 2;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+.containerLogo{
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+
+
