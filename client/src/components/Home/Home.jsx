@@ -26,7 +26,7 @@ const Home = () => {
     <>
       {/* <button onClick={(e) => handleGetClients()}>Cargar clientes</button> */}
 
-      {/* <Gallery /> */}
+      <Gallery />
     </>
   );
 };
