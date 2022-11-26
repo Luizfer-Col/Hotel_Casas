@@ -1,10 +1,10 @@
 .containerMenu {
-  /* background-color: blue; */
-  /* height: 95%; */
-  justify-content: space-evenly;
-  flex: 1;
-  display: flex;
-  align-items: center;
+    /* background-color: blue; */
+    /* height: 95%; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-inline: 150px;
 }
 
 .linkActive{
@@ -12,14 +12,14 @@
   font-weight: bolder;
   /* color: green; */
   text-decoration: inherit;
-  font-size: 13px;
+  font-size: 15.5px;
 }
 .linkInactive{
   font-family: Acumin;
   font-weight: lighter;
   /* color: red; */
   text-decoration: inherit;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .linkActive:hover {
@@ -37,9 +37,9 @@
 
 .groupButtons{
   flex: 2;
-  padding-inline: 20px;
+  /* padding-inline: 30px; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* background-color: red; */
 }
 .containerLogo{
@@ -47,6 +47,7 @@
   display: flex;
   justify-content: center;
   /* background-color: red; */
+  margin-inline: 100px;
 }
 
 

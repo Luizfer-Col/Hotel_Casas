@@ -1,5 +1,24 @@
-.title {
-  color: black;
+.containerMain {
+  width: 100%;
+  height: 130px;
+  background-color: var(--main-color-bg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerTop {
+  background-color: rgb(40, 40, 40);
+  height: 30px;
+  padding-inline: 150px;
+  border-bottom: solid white;
+  border-bottom-width: 0.5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Acumin;
+  font-size: small;
 }
 
 .containerHeader {
@@ -10,16 +29,6 @@
   /* height: 80px; */
   /* width: 1024px; */
   align-items: center;
-  flex:1;
+  flex: 1;
   /* padding-bottom: 30px; */
-}
-
-.logo {
-  /* background-color: green;
-  height: 100%; */
-  margin: auto;
-  /* flex: 1; */
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
 }

@@ -1,31 +1,33 @@
 import React from "react";
 import Style from "./NavBar.module.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import Logo from "../../../../assets/img/Logo.png";
+import { useEffect } from "react";
 
 const NavBar = ({ active, setActive, login }) => {
-  const inicio = active === "inicio";
-  const habitaciones = active === "habitaciones";
-  const reservar = active === "reservar";
-  const cuenta = active === "cuenta"
+  let location = useLocation();
+
+  const home = location.pathname === '/'
+  const rooms = location.pathname === '/rooms'
+  const reserve = location.pathname === '/reserve'
+  const account = location.pathname === '/account'
+
 
   return (
     <>
       <div className={Style.containerMenu}>
         <div className={Style.groupButtons}>
-          <ButtonNav route='/' text='INICIO' isActive={inicio} setActive={setActive} />
-          <ButtonNav route='/rooms' text='HABITACIONES' isActive={habitaciones} setActive={setActive} />
+          <ButtonNav linkTo='/' text='INICIO' isActive={home} />
+          <ButtonNav linkTo='/rooms' text='HABITACIONES' isActive={rooms} />
         </div>
         <div className={Style.containerLogo}>
-          <Link
-            className={(navData) => (navData.isActive ? Style.linkActive : Style.linkInactive)}
-            to="/" onClick={() => setActive("inicio")}>
+          <Link>
             <img width="120px" src={Logo} alt="" />
           </Link>
         </div>
         <div className={Style.groupButtons}>
-          <ButtonNav route='/reserve' text='RESERVAR' isActive={reservar} setActive={setActive} />
-          <ButtonNav route='/account' text='CUENTA' isActive={cuenta} setActive={setActive} />
+          <ButtonNav linkTo='/reserve' text='RESERVAR' isActive={reserve} />
+          <ButtonNav linkTo='/account' text='CUENTA' isActive={account} />
         </div>
       </div>
 
@@ -36,10 +38,10 @@ const NavBar = ({ active, setActive, login }) => {
 
 export default NavBar;
 
-const ButtonNav = ({ route, text, isActive, setActive, active }) => {
+export const ButtonNav = ({ linkTo, text, isActive }) => {
   return (
-    <Link to={route} onClick={() => setActive(text.toLowerCase())}>
-      <a className={isActive ? Style.linkActive : Style.linkInactive}>{text}</a>
+    <Link to={linkTo} >
+      <p className={isActive ? Style.linkActive : Style.linkInactive}>{text}</p>
     </Link>
   )
 }

@@ -82,7 +82,7 @@
 // export default Gallery;
 
 import React from "react";
-import SwiperCore, { EffectCoverflow, Navigation, Pagination } from "swiper";
+import SwiperCore, { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -91,7 +91,7 @@ import Img1 from "../../../assets/img/Home/Img1.jpg";
 import Img2 from "../../../assets/img/Home/Img2.jpg";
 import Img3 from "../../../assets/img/Home/Img3.jpg";
 
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
+SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 
 const Gallery = () => {
 
@@ -113,7 +113,10 @@ const Gallery = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
+        // autoplay={{
+        //   delay: 5000
+        // }}
+        pagination={{ clickable: true }}
         navigation={true}
         className="swiper"
       >

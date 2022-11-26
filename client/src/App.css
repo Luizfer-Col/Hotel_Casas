@@ -1,16 +1,19 @@
-#root { 
+#root {
   /* max-width: 1280px;
   margin: 0 auto; */
   /* padding: 2rem; */
   /* text-align: center;
-  background-color: antiquewhite;
   width: 100%; */
   /* height: 100vh; */
   /* display: table; */
-height:100%;
-display: flex;
-flex-direction: column;
-box-shadow: 0px 0px 30px blue
+  /* background-color: antiquewhite; */
+  /* height:100%; */
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0px 0px 30px blue */
+  --main-color-bg: #665A52;
+  --light-color-bg: #f3efe6;
+  --dark-color-bg: #4a272e;
 }
 
 .logo {
@@ -35,7 +38,7 @@ box-shadow: 0px 0px 30px blue
   /* background-color: green; */
   justify-content: "center";
   margin-inline: auto;
-  height:100%;
+  min-height: 100vh;
   width: 1140px;
   box-shadow: 0 0 2.5em 0.5em rgb(168 150 136/ 10%);
 }
@@ -63,4 +66,3 @@ box-shadow: 0px 0px 30px blue
 .read-the-docs {
   color: #888;
 }
-
