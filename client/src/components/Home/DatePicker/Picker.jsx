@@ -93,8 +93,10 @@ const Picker = () => {
   return (
     <div className={Style.container}>
 
+      <p
+        className={Style.pickerTitle}
+      >INGRESA LOS DATOS DE TU ESTADÍA</p>
       <div className={Style.pickerContainer}>
-
         <div className={Style.picker}>
           <p className={Style.label}>
             Desde
@@ -162,7 +164,9 @@ const Picker = () => {
         <button
           className={Style.buttons}
         >
-          Ver disponibilidad        </button>
+          <p>
+            BUSCAR
+          </p>        </button>
       </div>
 
       <div className={Style.bottomContainer}>
@@ -176,7 +180,7 @@ const Picker = () => {
         <div className={Style.reset}>
 
           <a onClick={handleReset}
-          >Resetear</a>
+          >Resetear formulario</a>
         </div>
 
       </div>

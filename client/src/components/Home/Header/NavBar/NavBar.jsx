@@ -21,7 +21,7 @@ const NavBar = ({ active, setActive, login }) => {
           <ButtonNav linkTo='/rooms' text='HABITACIONES' isActive={rooms} />
         </div>
         <div className={Style.containerLogo}>
-          <Link>
+          <Link to='/'>
             <img width="120px" src={Logo} alt="" />
           </Link>
         </div>

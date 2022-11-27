@@ -1,16 +1,28 @@
 .container {
     padding-inline: 60px;
-    height: 100px;
+    height: 170px;
     background-color: var(--light-color-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* padding-top: 20px; */
 }
 
 .pickerContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.pickerTitle {
+    color: var(--dark-color-bg);
+    /* margin-top: 0; */
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Acumin;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .picker {
@@ -22,12 +34,12 @@
 }
 
 .label {
-    font-family: MadeAVENUE;
+    font-family: Acumin;
     font-size: 18px;
     font-weight: lighter;
     color: var(--main-color-bg);
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .simbols {
@@ -101,7 +113,7 @@
 
 .buttons {
     width: 180px;
-    height: 30px;
+    height: 40px;
     border-radius: 6px;
     border-color: var(--dark-color-bg);
     border-width: 1px;
@@ -111,7 +123,17 @@
     background-color: var(--dark-color-bg);
     color: white;
     font-family: Acumin;
-    font-weight: lighter;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 0;
+    text-align: center;
+}
+
+.buttons p {
+    margin: 0;
+    padding: 0;
+    align-self: center;
 }
 
 .reset {
@@ -123,6 +145,7 @@
 }
 
 .reset a {
+    font-size: small;
     color: var(--dark-color-bg);
     cursor: pointer;
 }

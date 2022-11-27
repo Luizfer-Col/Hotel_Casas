@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: #535bf2;
+  font-weight: bolder;
 }
 
 ul {
@@ -84,7 +84,7 @@ button {
   font-family: inherit;
   /* background-color: #1a1a1a; */
   cursor: pointer;
-  transition: border-color 0.25s;
+  /* transition: border-color 0.25s; */
 }
 
 button:hover {
@@ -108,7 +108,7 @@ button:focus-visible {
   }
 
   a:hover {
-    color: #a3a3a3;
+    /* color: #a3a3a3; */
     font-weight: bolder;
   }
 
