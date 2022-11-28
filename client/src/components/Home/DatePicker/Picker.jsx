@@ -3,8 +3,10 @@ import Style from "./Picker.module.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './picker.css'
+import { useLocation } from 'react-router-dom';
 
 const Picker = () => {
+  let location = useLocation()
 
   const today = new Date()
   const tomorrow = new Date()
@@ -16,25 +18,14 @@ const Picker = () => {
   const [numRooms, setNumRooms] = useState('')
   const [openEndDate, setOpenEndDate] = useState(false)
   const [showError, setShowError] = useState(false)
-
-
-  // useEffect(() => {
-  //   if (startDate) {
-  //     let endDay = new Date()
-  //     endDay.setDate(startDate.getDate() + 1)
-
-  //     setEndDate(endDay)
-  //   }
-
-  // }, [startDate])
-
+  const [showReset, setShowReset] = useState(false)
 
   const subtractRooms = () => {
     if (numRooms > 1) setNumRooms(numRooms - 1)
   }
   const addRooms = () => {
+    setShowReset(true)
     if (numRooms.length < 1) {
-
       setNumRooms(1)
     } else if (numRooms < 20) setNumRooms(numRooms + 1)
   }
@@ -42,28 +33,18 @@ const Picker = () => {
     if (numPersons > 1) setNumPersons(numPersons - 1)
   }
   const addPersons = () => {
+    setShowReset(true)
     if (numPersons.length < 1) {
-
       setNumPersons(1)
     } else if (numPersons < 20) setNumPersons(numPersons + 1)
   }
 
   const handlePickStartDate = (date) => {
-    // let endDay = new Date()
+    setShowReset(true)
     setShowError(false)
-
     setStartDate(date)
-    // endDay.setDate(startDate.getDate() + 1)
-    // setEndDate(endDay)
-    // if (date > endDate) {
-    //   setEndDate(null)
-    // }
     numRooms.length < 1 && setNumRooms(1)
     numPersons.length < 1 && setNumPersons(1)
-    // setTimeout(() => {
-
-    //   setOpenEndDate(true)
-    // }, 1000);
   }
 
   const handlePickEndDate = (date) => {
@@ -83,19 +64,17 @@ const Picker = () => {
     setStartDate(null);
     setEndDate(null)
     setShowError(false)
+    setShowReset(false)
     setNumPersons('')
     setNumRooms('')
   }
 
-  console.log(startDate);
-  console.log(endDate);
-  console.log(startDate > endDate);
   return (
     <div className={Style.container}>
 
-      <p
+      {location.pathname === '/reserve' && <p
         className={Style.pickerTitle}
-      >INGRESA LOS DATOS DE TU ESTADÍA</p>
+      >INGRESA LOS DATOS PARA TU RESERVACIÓN</p>}
       <div className={Style.pickerContainer}>
         <div className={Style.picker}>
           <p className={Style.label}>
@@ -121,15 +100,13 @@ const Picker = () => {
             selected={endDate}
             open={openEndDate}
             highlightDates
-            // disabled={!startDate}
             onInputClick={handleOpenEndDate}
             onClickOutside={() => setOpenEndDate(false)}
             onChange={(date) => handlePickEndDate(date)}
             selectsEnd
             startDate={startDate}
             endDate={endDate}
-            // minDate={startDate?startDate:today}
-            minDate={today}
+            minDate={startDate ? startDate : today}
             placeholderText="DD/MM/AAAA"
             monthsShown={2}
 
@@ -178,9 +155,11 @@ const Picker = () => {
           )}
         </div>
         <div className={Style.reset}>
+          {showReset &&
 
-          <a onClick={handleReset}
-          >Resetear formulario</a>
+            <a onClick={handleReset}
+            >Resetear formulario</a>
+          }
         </div>
 
       </div>
