@@ -95,10 +95,15 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto var(--main-color-bg);
   color: var(--main-color-bg);
   font-weight: bolder;
 
+}
+
+input:focus,
+input:focus-visible {
+  outline-color: var(--main-color-bg);
 }
 
 @media (prefers-color-scheme: light) {

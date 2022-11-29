@@ -32,11 +32,11 @@
 
 .main-container {
   /* flex:1; */
-  /* display: "flex"; */
-  /* flex-direction:'column'; */
+  display: flex;
+  flex-direction: column;
   /* padding: 15px; */
   /* background-color: green; */
-  justify-content: "center";
+  /* justify-content: center; */
   margin-inline: auto;
   min-height: 100vh;
   width: 1140px;

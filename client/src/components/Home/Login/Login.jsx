@@ -6,19 +6,20 @@ import Style from "./Login.module.css";
 const Login = () => {
   return (
     <div className={Style.container}>
-      <h2 style={{ fontSize: 50, color: "black" }}>Accede</h2>
-      <p
-        style={{
-          fontSize: 20,
-          marginTop: -10,
-          color: "black",
-          fontWeight: "lighter",
-        }}
-      >
-        Por favor inicia sesión para empezar a reservar.
-      </p>
-
-      <div className={Style.form}>
+      <div className={Style.title}>
+        <h2 style={{ fontSize: 50, color: "black" }}>Accede</h2>
+        <p
+          style={{
+            fontSize: 20,
+            marginTop: -10,
+            color: "black",
+            fontWeight: "lighter",
+          }}
+        >
+          Por favor inicia sesión para empezar a reservar.
+        </p>
+      </div>
+      <div className={Style.content}>
         <form>
           <input
             className={Style.input}
@@ -27,10 +28,8 @@ const Login = () => {
             // value={input.mai}
             // maxLength="10"
             placeholder="Ingresa tu email"
-            // onChange={(e) => handleChange(e)}
-          ></input>
-          <br />
-
+          // onChange={(e) => handleChange(e)}
+          />
           <input
             className={Style.input}
             style={{}}
@@ -39,11 +38,11 @@ const Login = () => {
             // value={input.password}
             // maxLength="18"
             placeholder="Ingresa tu contraseña"
-            // onChange={(e) => handleChange(e)}
-          ></input>
-          <br />
-
-          <p className={Style.recover}>¿Olvidaste tu contraseña?</p>
+          // onChange={(e) => handleChange(e)}
+          />
+          <Link>
+            <p className={Style.recover}>¿Olvidaste tu contraseña?</p>
+          </Link>
           <div className={Style.actions}>
             <button
               className={Style.buttons}
@@ -71,15 +70,18 @@ const Login = () => {
         <div
           style={{
             backgroundColor: "black",
-            width: "94%",
+            width: "100%",
             height: 2,
-            marginInline: "3%",
+            // marginInline: "3%",
             // marginLeft: "10%",
             marginTop: 30,
           }}
         ></div>
-        <p style={{ fontSize: 20, color: "black", fontWeight: "lighter" }}>
-          ¿No tienes cuenta?
+      </div >
+      <div className={Style.link}>
+
+        <p style={{ fontSize: 20, color: "black", fontWeight: "lighter", marginRight: 6 }}>
+          ¿No tienes una cuenta?
         </p>
         <Link to={"/register"}>
           <p style={{ fontSize: 18, color: "#56070C", fontWeight: "bolder" }}>
@@ -87,7 +89,7 @@ const Login = () => {
           </p>
         </Link>
       </div>
-    </div>
+    </div >
   );
 };
 
