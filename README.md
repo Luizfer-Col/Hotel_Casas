@@ -31,22 +31,21 @@ Puede descargarse desde su sitio oficial https://nodejs.org/es/download/
 Puede descargase desde aquí https://www.postgresql.org/download/
 
 #### Pasos a seguir
-1 - Es necesario crear la base de datos desde la consola de sql shell (psql) o desde un gestor de base de datos como pgAdmin. La base de datos desde shell puede crearse con el siguiente comando db:create nombre_base_de_datos el nombre puede ser a elección. 
+##### Es necesario crear la base de datos desde la consola de sql shell (psql) o desde un gestor de base de datos como pgAdmin. La base de datos desde shell puede crearse con el siguiente comando db:create nombre_base_de_datos el nombre puede ser a elección. 
 
 
+#####  Clonar el repositorio en el ambiente local
 
-2 - Clonar el repositorio en el ambiente local
+##### Para levantar el frontend:
+- Cambiar a la carpeta client con el comando cd client desde la carpeta raiz del proyecto
+- Instalar las dependencias de node con el comando npm install
+- Levantar el proyecto con el comando npm run dev
+- Abrir el enlace que retorna la consola
 
-3 - Para levantar el frontend:
-        Cambiar a la carpeta client con el comando cd client desde la carpeta raiz del proyecto
-        Instalar las dependencias de node con el comando npm install
-        Levantar el proyecto con el comando npm run dev
-        Abrir el enlace que retorna la consola
-
-4 - Para levantar el backend
-        Ir a la carpeta api con el comando cd api desde la consola en la carpeta raiz del repositorio e instalar las dependencias de node con el comando npm install
-        Crear el archivo .env con las variables de entorno que se especifican en el archivo envexample. El nombre de la base de datos debe ser el mismo que se definió en el paso 1
-        Ejecutar npm run dev para levantar el servidor del backend
+##### Para levantar el backend
+- Ir a la carpeta api con el comando cd api desde la consola en la carpeta raiz del repositorio e instalar las dependencias de node con el comando npm install
+- Crear el archivo .env con las variables de entorno que se especifican en el archivo envexample. El nombre de la base de datos debe ser el mismo que se definió en el paso 1
+- Ejecutar npm run dev para levantar el servidor del backend
 
 
 
