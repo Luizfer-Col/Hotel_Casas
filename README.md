@@ -9,7 +9,7 @@
 
 
 
-#Tecnologías usadas: 𝐑𝐞𝐚𝐜𝐭, 𝐑𝐞𝐝𝐮𝐱, 𝐂𝐒𝐒, 𝐍𝐨𝐝𝐞𝐉𝐬, 𝐄𝐱𝐩𝐫𝐞𝐬𝐬, 𝐏𝐨𝐬𝐭𝐠𝐫𝐞𝐒𝐐𝐋, 𝐒𝐞𝐪𝐮𝐞𝐥𝐢𝐳𝐞, 𝐆𝐢𝐭𝐇𝐮𝐛
+# Tecnologías usadas: 𝐑𝐞𝐚𝐜𝐭, 𝐑𝐞𝐝𝐮𝐱, 𝐂𝐒𝐒, 𝐍𝐨𝐝𝐞𝐉𝐬, 𝐄𝐱𝐩𝐫𝐞𝐬𝐬, 𝐏𝐨𝐬𝐭𝐠𝐫𝐞𝐒𝐐𝐋, 𝐒𝐞𝐪𝐮𝐞𝐥𝐢𝐳𝐞, 𝐆𝐢𝐭𝐇𝐮𝐛
 • 𝐅𝐫𝐨𝐧𝐭 𝐄𝐧𝐝
 Se utilizó React para maquetar los componentes y Redux para manejar estados globales.
 Todos los componentes fueron estilizados utilizando CSS puro (sin librerías de terceros)
