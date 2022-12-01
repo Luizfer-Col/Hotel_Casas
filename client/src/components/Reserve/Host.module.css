@@ -1,0 +1,13 @@
+.container {
+    font-family: Acumin;
+}
+
+
+.titleRight {
+    /* background-color: green; */
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    text-align: left;
+    padding-left: 140px;
+    font-size: 22px;
+}

@@ -1,0 +1,123 @@
+/* :root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(208, 23, 23, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+
+@font-face {
+  font-family: "Acumin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin"), url("./assets/fonts/AcuminVariableConcept.woff") format("woff"), url(".assets/fonts/AcuminVariableConcept.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NewYork";
+  font-style: normal;
+  font-weight: normal;
+  src: local("NewYork"), url("./assets/fonts/NewYork.woff") format("woff"), url(".assets/fonts/NewYork.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MadeAvenue";
+  font-style: normal;
+  font-weight: normal;
+  src: local("MadeAvenue"), url("./assets/fonts/MadeAvenue.woff") format("woff"), url(".assets/fonts/MadeAvenue.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Allright";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Allright"), url("./assets/fonts/allright.woff") format("woff"), url(".assets/fonts/allright.ttf") format("truetype");
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  /* display: flex;
+  flex-direction: column; */
+  place-items: initial;
+  place-content: center;
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
+  /* height:100%; */
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  /* border-radius: 8px; */
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #1a1a1a; */
+  cursor: pointer;
+  /* transition: border-color 0.25s; */
+}
+
+button:hover {
+  /* border-color: #646cff; */
+  font-weight: bolder;
+
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--main-color-bg);
+  color: var(--main-color-bg);
+  font-weight: bolder;
+
+}
+
+input:focus,
+input:focus-visible {
+  outline-color: var(--main-color-bg);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    /* color: #a3a3a3; */
+    font-weight: bolder;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}

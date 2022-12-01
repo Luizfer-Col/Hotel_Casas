@@ -1,0 +1,16 @@
+.titleContainer {
+    background-color: var(--light-color-bg);
+    height: 170px;
+}
+
+.title {
+    /* color: var(--dark-color-bg); */
+    /* margin-top: 0; */
+    margin-top: 45px;
+    margin-bottom: 35px;
+    margin-inline: 60px;
+    font-size: 22px;
+    font-family: Acumin;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}

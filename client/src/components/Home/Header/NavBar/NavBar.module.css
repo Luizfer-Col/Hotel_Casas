@@ -1,0 +1,54 @@
+.containerMenu {
+    /* background-color: blue; */
+    /* height: 95%; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-inline: 150px;
+}
+
+.linkActive{
+  font-family: Acumin;
+  font-weight: bolder;
+  /* color: green; */
+  text-decoration: inherit;
+  font-size: 15.5px;
+}
+.linkInactive{
+  font-family: Acumin;
+  font-weight: lighter;
+  /* color: red; */
+  text-decoration: inherit;
+  font-size: 15px;
+}
+
+.linkActive:hover {
+  font-weight: bolder;
+  color: white;
+  /* font-weight: bolder; */
+
+}
+.linkInactive:hover {
+  font-weight: bolder;
+  color: white;
+  /* font-weight: bolder; */
+
+}
+
+.groupButtons{
+  flex: 2;
+  /* padding-inline: 30px; */
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+.containerLogo{
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  margin-inline: 100px;
+}
+
+
+

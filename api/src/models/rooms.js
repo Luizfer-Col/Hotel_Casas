@@ -1,7 +1,8 @@
 import {DataTypes} from 'sequelize';
 import sequelize from "../database/database.js";
+import unavailableDates from './unavailableDates.js';
 
-const{INTEGER,BOOLEAN,STRING,} = DataTypes
+const{DATE,INTEGER,BOOLEAN,STRING,} = DataTypes
 const Rooms = sequelize.define('rooms',{
     id: {
         type: STRING,
@@ -48,4 +49,15 @@ const Rooms = sequelize.define('rooms',{
     }
 })
 
+//Conectando Habitaciones con Fechas
+Rooms.hasMany(unavailableDates,
+    {
+foreignKey: 'roomId',
+sourceKey: 'id'
+})
+unavailableDates.belongsTo(Rooms,
+    {
+foreignKey: 'roomId',
+targetId: 'id'
+})
 export default Rooms

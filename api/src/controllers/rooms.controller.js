@@ -1,14 +1,75 @@
 import Rooms from "../models/Rooms.js";
 
 export async function getRooms(req, res) {
+    const { type } = req.body
     try {
-      const rooms = await Rooms.findAll();
-      console.log(rooms);
-      if (rooms.length > 0) {
-        res.send(rooms);
+      if (type){
+        const roomsType = await Rooms.findAll({
+          where: {
+          type: type
+          }
+        })
+      if (roomsType.length > 0){
+        res.send(roomsType)
+        return
       } else {
-        res.send("No hay habitaciones existentes.");
+        res.send("No existen habitaciones de ese tipo.");
+        return
       }
+      }
+      const rooms = await Rooms.findAll();
+      if (rooms.length > 0) {
+        res.json(rooms);
+      } else {
+        res.send ("No hay habitaciones existentes.")
+      }
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
+      });
+    }
+  }
+
+  export async function getRoom(req, res) {
+    try {
+      const { id } = req.params;
+      const room = await Rooms.findOne({
+        where: {
+          id,
+        },
+      });
+      if (room) {
+        res.json(room);
+      } else {
+        res.status(404).json({
+          message: "Habitación no encontrada.",
+        });
+      }
+      console.log(room);
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
+      });
+    }
+  }
+
+  export async function getRoomsByType(req, res) {
+    try {
+      const { type } = req.body;
+      console.log(type)
+      const rooms = await Rooms.findAll({
+        where: {
+          type: "Doble",
+        },
+      });
+      if (rooms) {
+        res.json(rooms);
+      } else {
+        res.status(404).json({
+          message: "Tipo de habitación no encontrada.",
+        });
+      }
+      console.log(rooms);
     } catch (error) {
       res.status(500).json({
         message: error.message,
@@ -48,13 +109,38 @@ export async function getRooms(req, res) {
   export async function updateRoom(req, res) {
     try {
       const { id } = req.params;
-      const { em, codeCountryPhone, phone } = req.body;
-      const client = await Clients.findByPk(id);
-      client.email = email;
-      client.codeCountryPhone = codeCountryPhone;
-      client.phone = phone;
-      await client.save();
-      res.json(client);
+      const { image, available, type, capacity, toilets, price, description, wifi, air, tub, tv, balcony } = req.body;
+      const room = await Rooms.findByPk(id);
+      room.image = image;
+      room.available = available;
+      room.type = type;
+      room.capacity = capacity;
+      room.toilets = toilets;
+      room.price = price;
+      room.description = description;
+      room.wifi = wifi;
+      room.air = air;
+      room.tub = tub;
+      room.tv = tv;
+      room.balcony = balcony;
+      await room.save();
+      res.json(room);
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
+      });
+    }
+  }
+
+  export async function deleteRoom(req, res) {
+    try {
+      const { id } = req.params;
+      await Rooms.destroy({
+        where: {
+          id,
+        },   
+      });
+      return res.sendStatus(204)
     } catch (error) {
       res.status(500).json({
         message: error.message,
