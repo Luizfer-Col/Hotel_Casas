@@ -29,12 +29,12 @@ const Offer = (props) => {
                                 <p key={index} className={Style.features}>• {feat}</p>
                             )}
                         </div>
-                        <p style={{ margin: 0 }}><strong>PRECIO NOCHE {precioPorNoche}</strong></p>
+                        <p style={{ margin: 0 }}><strong>{precioPorNoche} x noche</strong></p>
                     </div>
                     <div className={Style.totales}>
                         <div style={{ width: 180 }}>
-                            <p><strong>TOTAL: {total}</strong></p>
-                            <p style={{ fontWeight: 'bolder', fontSize: 12 }}>{personas} personas {noches} noches</p>
+                            <p style={{ fontSize: 'large' }}><strong>TOTAL: {total}</strong></p>
+                            <p style={{ fontWeight: 'bolder', fontSize: 14 }}>{personas} personas {noches} noches</p>
                         </div>
                         <button className={Style.buttons}>
                             <p><span>RESERVAR</span></p>

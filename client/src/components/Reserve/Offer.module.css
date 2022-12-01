@@ -99,7 +99,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-left: auto;
-    background-color: var(--light-color-bg);
+    /* background-color: var(--light-color-bg); */
     padding-block: 3px;
     /* margin-left: 120px; */
 }

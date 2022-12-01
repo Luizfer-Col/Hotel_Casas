@@ -7,6 +7,20 @@
     padding-top: 10px;
     /* padding-bottom: 10px; */
     text-align: left;
-    padding-left: 140px;
+    /* padding-left: 140px; */
     font-size: 22px;
+}
+
+.reserve {
+    /* background-color: chartreuse; */
+    margin-block: 26px;
+    border: solid var(--main-color-bg) .5px;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.reserve p {
+    margin-top: 10px;
+    /* font-weight: bolder; */
+    font-size: 14px;
 }
