@@ -1,0 +1,23 @@
+.title {
+    /* background-color: #4a272e; */
+    padding-top: 25px;
+    padding-bottom: 24px;
+    padding-inline: 60px;
+    /* color: rgb(255, 255, 255); */
+    font-size: 22px;
+    font-family: MadeAvenue;
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+}
+
+.title h3 {
+    margin: 0;
+    padding: o;
+    font-weight: lighter;
+}
+
+.title p {
+    margin: 0;
+    padding: o;
+    font-size: large;
+}
