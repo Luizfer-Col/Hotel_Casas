@@ -27,7 +27,8 @@ const Header = () => {
       <div className={Style.headerTop}>
         <div>{null}</div>
         <div>
-          <Link to='/login'>Acceder</Link>
+          {/* <Link to='/login'>Acceder</Link> */}
+          <NavAccount />
         </div>
       </div>
       <div className={Style.containerHeader}>

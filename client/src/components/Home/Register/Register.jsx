@@ -32,7 +32,7 @@ const Register = (props) => {
     e.preventDefault();
     console.log("enviando formulario");
     dispatch(createClient(input));
-    dispatch(getClients());
+    // dispatch(getClients());
   }
   return (
     <div className={Style.container}>

@@ -28,7 +28,7 @@ Puede descargarse desde su sitio oficial https://nodejs.org/es/download/
 
 - Postgresql
 
-Puede descargase desde aquí https://www.postgresql.org/download/
+Puede descargarse desde aquí https://www.postgresql.org/download/
 
 #### Pasos a seguir
 ##### Es necesario crear la base de datos desde la consola de sql shell (psql) o desde un gestor de base de datos como pgAdmin. La base de datos desde shell puede crearse con el siguiente comando db:create nombre_base_de_datos el nombre puede ser a elección. 
