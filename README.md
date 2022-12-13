@@ -27,7 +27,6 @@ El ordenador debe tener los siguientes aplicativos y/o entornos instalados
 Puede descargarse desde su sitio oficial https://nodejs.org/es/download/
 
 - Postgresql
-
 Puede descargarse desde aquí https://www.postgresql.org/download/
 
 #### Pasos a seguir
@@ -46,6 +45,39 @@ Puede descargarse desde aquí https://www.postgresql.org/download/
 - Ir a la carpeta api con el comando cd api desde la consola en la carpeta raiz del repositorio e instalar las dependencias de node con el comando npm install
 - Crear el archivo .env con las variables de entorno que se especifican en el archivo envexample. El nombre de la base de datos debe ser el mismo que se definió en el paso 1
 - Ejecutar npm run dev para levantar el servidor del backend
+
+### Capturas
+
+#### Registro
+![Login](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/01-register.png)
+
+#### Login
+![Login](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/02-login.png)
+
+#### Home
+![Home](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/03-home.png)
+
+#### Habitaciones
+![Rooms](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/04-rooms.png)
+
+#### Búsqueda
+![Search](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/05-search.png)
+
+#### Cuenta
+##### Datos
+![Data](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/Account-data.jpg)
+
+##### Editar datos
+![Edit](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/Account-edit.jpg)
+
+##### Contraseña
+![pass](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/Account-pass.jpg)
+
+##### Reservaciones
+![res](https://raw.githubusercontent.com/Luizfer-Col/Hotel_Casas/main/screens/Account-res.jpg)
+
+
+
 
 
 
