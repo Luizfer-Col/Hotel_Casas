@@ -14,7 +14,7 @@ const DataAccount = ({ updateData, setUpdateData }) => {
                     className={Style.input}
                     type="text"
                     name="name"
-                    // value={input.name}
+                    value={'Luis Fernando'}
                     // placeholder="Nombre"
                     onChange={(e) => handleChange(e)}
                 />
@@ -27,7 +27,7 @@ const DataAccount = ({ updateData, setUpdateData }) => {
                     className={Style.input}
                     type="text"
                     name="lastname"
-                    // value={input.lastname}
+                    value={'Colorado'}
                     // placeholder="Apellidos"
                     onChange={(e) => handleChange(e)}
                 />
@@ -40,7 +40,7 @@ const DataAccount = ({ updateData, setUpdateData }) => {
                     className={Style.input}
                     type="text"
                     name="email"
-                    // value={input.email}
+                    value={'luis.colorado@correo.com'}
                     maxLength="30"
                     // placeholder="Email"
                     onChange={(e) => handleChange(e)}
@@ -74,7 +74,13 @@ const DataAccount = ({ updateData, setUpdateData }) => {
                 <p className={Style.label}>Teléfono:</p>
                 <select
                     disabled={updateData}
-                ></select>
+                >
+                    <option value="col">+57</option>
+                    <option value="ce">+38</option>
+                    <option value="pep">+59</option>
+
+
+                </select>
                 <input
                     disabled={updateData}
                     className={Style.inputPhone}
@@ -91,7 +97,13 @@ const DataAccount = ({ updateData, setUpdateData }) => {
                 <p className={Style.label}>Documento:</p>
                 <select
                     disabled={updateData}
-                ></select>
+
+                >
+                    <option value="cc">C.C</option>
+                    <option value="ce">C.E</option>
+                    <option value="pep">P.E.P</option>
+                    <option value="pas">P.P</option>
+                </select>
                 <input
                     disabled={updateData}
                     className={Style.inputPhone}

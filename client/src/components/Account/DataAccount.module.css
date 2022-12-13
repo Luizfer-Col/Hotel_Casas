@@ -13,6 +13,7 @@
 
 .containerInput {
     /* background-color: yellow; */
+
     margin-top: 10px;
     display: flex;
     align-items: center
@@ -27,6 +28,7 @@
 
 .input {
     /* width: 70%; */
+    font-size: 16px;
     width: 60%;
     height: 35px;
     padding-inline: 6px;
