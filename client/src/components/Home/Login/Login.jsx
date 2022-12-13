@@ -33,7 +33,7 @@ const Login = () => {
           <input
             className={Style.input}
             style={{}}
-            type="text"
+            type="password"
             name="password"
             // value={input.password}
             // maxLength="18"

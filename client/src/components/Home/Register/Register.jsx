@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Style from "./Register.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { createClient, getClients } from "../../../redux/actions/index";
@@ -19,19 +19,31 @@ const Register = (props) => {
 
   const idTypes = ["CC", "NIT", "CE", "TI", "PP", "DNI"];
 
+  const [checkPassword, setCheckPassword] = useState(false)
+
+  useEffect(() => {
+    if (input.password.length > 0 && input.password === input.confirmPassword) {
+      setCheckPassword(true)
+    }
+  }, [input])
+
+
   function handleChange(e) {
     e.preventDefault();
     setInput({
       ...input,
       [e.target.name]: e.target.value,
     });
-    console.log("input.name", input);
+    console.log("input.password", input.password);
+    console.log("input.confirmPassword", input.confirmPassword);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     console.log("enviando formulario");
-    dispatch(createClient(input));
+    console.log(checkPassword);
+    // checkPassword !== false && console.log('holaa');
+    // dispatch(createClient(input));
     // dispatch(getClients());
   }
   return (
@@ -85,7 +97,7 @@ const Register = (props) => {
 
           <input
             className={Style.input}
-            type="text"
+            type="password"
             name="password"
             value={input.password}
             maxLength="18"
@@ -96,7 +108,7 @@ const Register = (props) => {
 
           <input
             className={Style.input}
-            type="text"
+            type="password"
             name="confirmPassword"
             value={input.confirmPassword}
             maxLength="18"
